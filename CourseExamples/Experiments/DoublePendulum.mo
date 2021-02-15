@@ -51,5 +51,5 @@ object to <strong>false</strong> to switch off animation of all components.
 <img src=\"modelica://Modelica/Resources/Images/Mechanics/MultiBody/Examples/Elementary/DoublePendulum.png\"
 alt=\"model Examples.Elementary.DoublePendulum\">
 </blockquote>
-</html>"));
+</html>"),    __Dymola_selections = {Selection(name = "MySelection", match = {MatchVariable(name = "*.phi")})});
 end DoublePendulum;
