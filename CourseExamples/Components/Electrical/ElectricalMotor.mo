@@ -19,7 +19,7 @@ model ElectricalMotor "Electric Motor Model for Workshop 2"
     annotation (Placement(transformation(extent={{-108,14},{-68,54}})));
   parameter Real ratio=2 "Transmission ratio (flange_a.phi/flange_b.phi)"
     annotation (Dialog(group="Mechanical Parameters"));
-  parameter Modelica.Units.SI.Inertia J "Moment of inertia"
+  parameter Modelica.Units.SI.Inertia J=1 "Moment of inertia"
     annotation (Dialog(group="Mechanical Parameters"));
 equation
   connect(motor.pin_ap, signalVoltage.n) annotation (Line(points={{-18,-24},{-2,
