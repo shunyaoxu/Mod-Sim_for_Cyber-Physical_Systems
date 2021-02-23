@@ -22,45 +22,45 @@ model PumpSystemII
     annotation (Placement(transformation(extent={{68,68},{88,88}})));
   Modelica.Fluid.Sources.FixedBoundary boundary(
     redeclare package Medium = Modelica.Media.Water.ConstantPropertyLiquidWater,
-
     p=100000,
     nPorts=1)
     annotation (Placement(transformation(extent={{-90,-60},{-70,-40}})));
+
   Modelica.Fluid.Sources.FixedBoundary boundary1(
     redeclare package Medium = Modelica.Media.Water.ConstantPropertyLiquidWater,
-
     p=100000,
     nPorts=1) annotation (Placement(transformation(extent={{66,-60},{86,-40}})));
+
   Modelica.Fluid.Pipes.StaticPipe pipe(
     redeclare package Medium = Modelica.Media.Water.ConstantPropertyLiquidWater,
-
     length=10,
     diameter=0.05,
     height_ab=10)
     annotation (Placement(transformation(extent={{-32,-38},{-12,-18}})));
+
   Modelica.Fluid.Machines.Pump pump(
     redeclare package Medium = Modelica.Media.Water.ConstantPropertyLiquidWater,
-
     redeclare function flowCharacteristic =
         Modelica.Fluid.Machines.BaseClasses.PumpCharacteristics.linearFlow (
           V_flow_nominal={0,0.1}, head_nominal={10,0}),
     N_nominal=130)
     annotation (Placement(transformation(extent={{-58,-60},{-38,-40}})));
+
   Modelica.Fluid.Vessels.OpenTank tank(
     height=3,
     crossArea=5,
     redeclare package Medium = Modelica.Media.Water.ConstantPropertyLiquidWater,
-
     use_portsData=true,
     portsData={Modelica.Fluid.Vessels.BaseClasses.VesselPortsData(diameter=0.1),
         Modelica.Fluid.Vessels.BaseClasses.VesselPortsData(diameter=0.1)},
     nPorts=2) annotation (Placement(transformation(extent={{-20,-4},{20,36}})));
+
   Modelica.Fluid.Valves.ValveLinear valveLinear(
     redeclare package Medium = Modelica.Media.Water.ConstantPropertyLiquidWater,
-
     dp_nominal=5000,
     m_flow_nominal=100)
     annotation (Placement(transformation(extent={{24,-40},{44,-20}})));
+
   Modelica.Blocks.Sources.Step step(
     height=0.999,
     offset=0.001,
