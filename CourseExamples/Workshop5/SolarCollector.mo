@@ -27,6 +27,7 @@ equation
   Q_flow = -n * A * G;
   Delta_T = port_b.T - Tamb;
   n = F * (a0 - a1*Delta_T/max(G,0.0001) - a2*(Delta_T^2)/max(G,0.0001));
-  annotation (Icon(coordinateSystem(preserveAspectRatio=false)), Diagram(
+  annotation (Icon(graphics,
+                   coordinateSystem(preserveAspectRatio=false)), Diagram(graphics,
         coordinateSystem(preserveAspectRatio=false)));
 end SolarCollector;

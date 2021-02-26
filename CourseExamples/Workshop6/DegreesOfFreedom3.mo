@@ -15,6 +15,6 @@ equation
           46},{-16,46},{-16,54},{-10,54}}, color={0,0,0}));
   connect(idealPlanetary.ring, inertia2.flange_a)
     annotation (Line(points={{10,54},{26,54}}, color={0,0,0}));
-  annotation (Icon(coordinateSystem(preserveAspectRatio=false)), Diagram(
-        coordinateSystem(preserveAspectRatio=false)));
+  annotation (Icon(graphics, coordinateSystem(preserveAspectRatio=false)),
+      Diagram(graphics, coordinateSystem(preserveAspectRatio=false)));
 end DegreesOfFreedom3;

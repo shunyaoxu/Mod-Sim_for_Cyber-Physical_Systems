@@ -34,7 +34,7 @@ equation
   connect(expSine.y, inverseBlockConstraints.u1) annotation (Line(points={{47,
           16},{-22,16},{-22,18},{-28.1,18}}, color={0,0,127}));
   annotation (
-    Icon(coordinateSystem(preserveAspectRatio=false)),
-    Diagram(coordinateSystem(preserveAspectRatio=false)),
+    Icon(graphics, coordinateSystem(preserveAspectRatio=false)),
+    Diagram(graphics, coordinateSystem(preserveAspectRatio=false)),
     experiment(StopTime=10, __Dymola_Algorithm="Dassl"));
 end InverseSystem;

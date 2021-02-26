@@ -34,7 +34,9 @@ equation
   connect(solarCollector.port_b, fixedTemperature.port)
     annotation (Line(points={{8,20},{58,20},{58,2},{52,2}}, color={191,0,0}));
   annotation (
-    Icon(coordinateSystem(preserveAspectRatio=false)),
-    Diagram(coordinateSystem(preserveAspectRatio=false)),
+    Icon(graphics,
+         coordinateSystem(preserveAspectRatio=false)),
+    Diagram(graphics,
+            coordinateSystem(preserveAspectRatio=false)),
     experiment(StopTime=86400, __Dymola_Algorithm="Dassl"));
 end SolarCollectorTest;

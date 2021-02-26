@@ -130,7 +130,8 @@ equation
           -120,-6.2},{-107.4,-6.2}}, color={0,0,127}));
   connect(from_deg.y, solarCollector.theta) annotation (Line(points={{-123,-44},
           {-120,-44},{-120,-17},{-107.4,-17}}, color={0,0,127}));
-  annotation (Icon(coordinateSystem(preserveAspectRatio=false)), Diagram(
+  annotation (Icon(graphics,
+                   coordinateSystem(preserveAspectRatio=false)), Diagram(graphics,
         coordinateSystem(preserveAspectRatio=false)),
     experiment(
       StopTime=86400,

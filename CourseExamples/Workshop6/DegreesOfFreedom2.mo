@@ -11,6 +11,6 @@ equation
     annotation (Line(points={{-26,40},{-10,40}}, color={0,0,0}));
   connect(idealGear.flange_b, inertia1.flange_a)
     annotation (Line(points={{10,40},{26,40}}, color={0,0,0}));
-  annotation (Icon(coordinateSystem(preserveAspectRatio=false)), Diagram(
-        coordinateSystem(preserveAspectRatio=false)));
+  annotation (Icon(graphics, coordinateSystem(preserveAspectRatio=false)),
+      Diagram(graphics, coordinateSystem(preserveAspectRatio=false)));
 end DegreesOfFreedom2;

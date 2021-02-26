@@ -40,6 +40,7 @@ equation
     annotation (Line(points={{-22,34},{-88,34}}, color={0,0,127}));
   connect(flange_b1, flange_b1)
     annotation (Line(points={{90,-34},{90,-34}}, color={0,0,0}));
-  annotation (Icon(coordinateSystem(preserveAspectRatio=false)), Diagram(
+  annotation (Icon(graphics,
+                   coordinateSystem(preserveAspectRatio=false)), Diagram(graphics,
         coordinateSystem(preserveAspectRatio=false)));
 end ElectricalMotor;

@@ -105,7 +105,8 @@ equation
     annotation (Line(points={{113,44},{140,44}}, color={0,0,127}));
   connect(tankLevel.y, dynamicDiagram1.Value)
     annotation (Line(points={{117,-36},{140,-36}}, color={0,0,127}));
-  annotation (Icon(coordinateSystem(preserveAspectRatio=false)), Diagram(
+  annotation (Icon(graphics,
+                   coordinateSystem(preserveAspectRatio=false)), Diagram(graphics,
         coordinateSystem(preserveAspectRatio=false)),
     experiment(
       StopTime=2000,

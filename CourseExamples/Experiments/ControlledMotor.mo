@@ -33,7 +33,8 @@ equation
     annotation (Line(points={{46,10},{66,10}}, color={0,0,0}));
   connect(speedSensor.w, PID.u_m) annotation (Line(points={{87,10},{92,10},{92,
           -16},{-46,-16},{-46,-2}}, color={0,0,127}));
-  annotation (Icon(coordinateSystem(preserveAspectRatio=false)), Diagram(
+  annotation (Icon(graphics,
+                   coordinateSystem(preserveAspectRatio=false)), Diagram(graphics,
         coordinateSystem(preserveAspectRatio=false)),
     experiment(StopTime=250, __Dymola_Algorithm="Dassl"),
     __Dymola_experimentSetupOutput,

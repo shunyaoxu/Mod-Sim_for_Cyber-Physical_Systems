@@ -5,7 +5,9 @@ model MassInGravityField
   Modelica.Mechanics.MultiBody.Parts.Body mass(m=1)
     annotation (Placement(transformation(extent={{2,18},{22,38}})));
   annotation (
-    Icon(coordinateSystem(preserveAspectRatio=false)),
-    Diagram(coordinateSystem(preserveAspectRatio=false)),
+    Icon(graphics,
+         coordinateSystem(preserveAspectRatio=false)),
+    Diagram(graphics,
+            coordinateSystem(preserveAspectRatio=false)),
     experiment(StopTime=10, __Dymola_Algorithm="Dassl"));
 end MassInGravityField;

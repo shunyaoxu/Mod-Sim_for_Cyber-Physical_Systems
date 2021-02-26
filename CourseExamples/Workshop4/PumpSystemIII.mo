@@ -93,7 +93,8 @@ equation
           {82,-16},{34,-16},{34,-22}}, color={0,0,127}));
   connect(realExpression.y, PID.u_m)
     annotation (Line(points={{-59,48},{-44,48},{-44,66}}, color={0,0,127}));
-  annotation (Icon(coordinateSystem(preserveAspectRatio=false)), Diagram(
+  annotation (Icon(graphics,
+                   coordinateSystem(preserveAspectRatio=false)), Diagram(graphics,
         coordinateSystem(preserveAspectRatio=false)),
     experiment(
       StopTime=2000,

@@ -93,7 +93,8 @@ equation
           -48,48},{60,48},{60,78},{68,78}}, color={0,0,0}));
   connect(step.y, valveLinear.opening) annotation (Line(points={{77,22},{82,22},
           {82,-16},{34,-16},{34,-22}}, color={0,0,127}));
-  annotation (Icon(coordinateSystem(preserveAspectRatio=false)), Diagram(
+  annotation (Icon(graphics,
+                   coordinateSystem(preserveAspectRatio=false)), Diagram(graphics,
         coordinateSystem(preserveAspectRatio=false)),
     experiment(StopTime=300, __Dymola_Algorithm="Dassl"),
     __Dymola_experimentSetupOutput,

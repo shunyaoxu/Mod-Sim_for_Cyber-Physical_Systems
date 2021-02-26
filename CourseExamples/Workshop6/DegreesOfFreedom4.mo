@@ -11,6 +11,6 @@ equation
     annotation (Line(points={{10,32},{40,32}}, color={0,0,0}));
   connect(springDamper.flange_a, fixed.flange)
     annotation (Line(points={{-10,32},{-36,32}}, color={0,0,0}));
-  annotation (Icon(coordinateSystem(preserveAspectRatio=false)), Diagram(
-        coordinateSystem(preserveAspectRatio=false)));
+  annotation (Icon(graphics, coordinateSystem(preserveAspectRatio=false)),
+      Diagram(graphics, coordinateSystem(preserveAspectRatio=false)));
 end DegreesOfFreedom4;
