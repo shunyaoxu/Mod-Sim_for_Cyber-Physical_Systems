@@ -63,7 +63,6 @@ model PumpSystemIII
 
   Modelica.Fluid.Valves.ValveLinear valveLinear(
     redeclare package Medium = Modelica.Media.Water.ConstantPropertyLiquidWater,
-
     dp_nominal=5000,
     m_flow_nominal=5)
     annotation (Placement(transformation(extent={{24,-40},{44,-20}})));
