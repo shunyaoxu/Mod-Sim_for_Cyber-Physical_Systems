@@ -41,7 +41,7 @@ model Spaceship_Interface_Test
         origin={130,-6})));
   Modelica.Electrical.Analog.Basic.Resistor resistor3(R=10000)
     annotation (Placement(transformation(extent={{-18,-16},{2,4}})));
-  LED lED annotation (Placement(transformation(extent={{40,10},{60,30}})));
+  Green_LED lED annotation (Placement(transformation(extent={{40,10},{60,30}})));
 equation
   connect(ground.p, constantVoltage.n)
     annotation (Line(points={{-100,-40},{-100,40}}, color={0,0,255}));

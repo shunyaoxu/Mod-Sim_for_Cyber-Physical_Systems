@@ -43,7 +43,8 @@ model Spaceship_Interface
     annotation (Placement(transformation(extent={{-18,-36},{2,-16}})));
   Arduino.Components.ArduinoUno arduinoUno(sketch="Project2.ino")
     annotation (Placement(transformation(extent={{-86,-8},{16,120}})));
-  LED lED annotation (Placement(transformation(extent={{40,-10},{60,10}})));
+  Green_LED lED
+    annotation (Placement(transformation(extent={{40,-10},{60,10}})));
 equation
   connect(ground.p, constantVoltage.n)
     annotation (Line(points={{-100,-60},{-100,20}}, color={0,0,255}));

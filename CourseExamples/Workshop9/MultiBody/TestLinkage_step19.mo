@@ -16,7 +16,7 @@ model TestLinkage_step19
   Modelica.Mechanics.Translational.Sources.Position position(useSupport=true,
       exact=true)
     annotation (Placement(transformation(extent={{-50,72},{-30,92}})));
-  Modelica.Blocks.Sources.Sine sine(amplitude=0.1)
+  Modelica.Blocks.Sources.Sine sine(amplitude=0.08)
     annotation (Placement(transformation(extent={{-84,72},{-64,92}})));
 equation
   connect(fixed1.frame_b, linkage.mountFrame) annotation (Line(

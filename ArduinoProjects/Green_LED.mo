@@ -1,5 +1,5 @@
 within ArduinoProjects;
-model LED "Light emitting diode with animation"
+model Green_LED "Light emitting diode with animation"
   extends Modelica.Electrical.Analog.Interfaces.TwoPin;
   Modelica.Electrical.Analog.Semiconductors.Diode2 diode(Vf=1.6, Ids(
         displayUnit="mA"))
@@ -42,4 +42,4 @@ equation
           fillPattern=FillPattern.Solid,
           fillColor={0,0,255}),
         Line(points={{54,38},{74,58}}, color={28,108,200})}));
-end LED;
+end Green_LED;
