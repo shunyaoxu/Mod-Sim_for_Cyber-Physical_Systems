@@ -7,8 +7,7 @@ model PumpSystemIII
     annotation (Placement(transformation(extent={{-12,68},{8,88}})));
   replaceable
   Modelica.Blocks.Sources.Constant
-                               speed_sp(k=1) constrainedby
-    Modelica.Blocks.Interfaces.SO
+                               speed_sp(k=1) constrainedby Modelica.Blocks.Interfaces.SO
     annotation (Placement(transformation(extent={{-94,68},{-74,88}})));
   Modelica.Blocks.Continuous.LimPID PID(
     k=120,
@@ -40,8 +39,8 @@ model PumpSystemIII
     modelStructure=Modelica.Fluid.Types.ModelStructure.av_b,
     use_HeatTransfer=true,
     redeclare model HeatTransfer =
-        Modelica.Fluid.Pipes.BaseClasses.HeatTransfer.ConstantFlowHeatTransfer
-        (alpha0=2000))
+        Modelica.Fluid.Pipes.BaseClasses.HeatTransfer.ConstantFlowHeatTransfer (
+         alpha0=2000))
     annotation (Placement(transformation(extent={{-32,-38},{-12,-18}})));
 
   Modelica.Fluid.Machines.Pump pump(
