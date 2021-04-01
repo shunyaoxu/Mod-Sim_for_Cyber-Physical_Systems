@@ -1,4 +1,4 @@
-within CourseExamples.Workshop11;
+within CourseExamples.Workshop12;
 package Subsystems
 
 end Subsystems;

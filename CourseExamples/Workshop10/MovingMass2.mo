@@ -1,6 +1,6 @@
 within CourseExamples.Workshop10;
 model MovingMass2
-  Modelica.Mechanics.Translational.Sources.Position position(exact=true)
+  Modelica.Mechanics.Translational.Sources.Position position(exact=false)
     annotation (Placement(transformation(extent={{0,20},{20,40}})));
   Modelica.Mechanics.Translational.Components.Mass mass annotation (Placement(transformation(extent={{40,20},{60,40}})));
   Modelica.Blocks.Sources.Step step(startTime=0.1) annotation (Placement(transformation(extent={{-46,20},{-26,40}})));
