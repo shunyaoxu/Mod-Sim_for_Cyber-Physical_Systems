@@ -11,8 +11,5 @@ equation
   annotation (
     Icon(coordinateSystem(preserveAspectRatio=false)),
     Diagram(coordinateSystem(preserveAspectRatio=false)),
-    experiment(
-      StopTime=10,
-      Tolerance=1e-06,
-      __Dymola_Algorithm="Dassl"));
+    experiment(StopTime=10, __Dymola_Algorithm="Dassl"));
 end TestTermostatLogic;

@@ -1,0 +1,10 @@
+ 
+Compiling and linking the model (Visual C++). 
+ 
+dsmodel.c
+  
+libds.lib(dsres.obj) : warning LNK4217: 
+libds.lib(amat.obj) : warning LNK4049: 
+ 
+Successful generation of Dymosim. 
+ 
