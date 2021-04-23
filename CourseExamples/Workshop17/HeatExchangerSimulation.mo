@@ -3,8 +3,8 @@ model HeatExchangerSimulation "Simulation for the heat exchanger model"
 
 extends Modelica.Icons.Example;
 
-//replaceable package Medium = Modelica.Media.Water.ConstantPropertyLiquidWater;
 replaceable package Medium = Modelica.Media.Water.WaterIF97_ph;
+//replaceable package Medium = Modelica.Media.Water.StandardWaterOnePhase;
 //package Medium = Modelica.Media.Incompressible.Examples.Essotherm650;
   Modelica.Fluid.Examples.HeatExchanger.BaseClasses.BasicHX HEX(
     c_wall=500,
@@ -32,7 +32,7 @@ replaceable package Medium = Modelica.Media.Water.WaterIF97_ph;
     area_h_1=0.075*20,
     area_h_2=0.075*20,
     redeclare model HeatTransfer_2 =
-        Modelica.Fluid.Pipes.BaseClasses.HeatTransfer.ConstantFlowHeatTransfer (
+        Modelica.Fluid.Pipes.BaseClasses.HeatTransfer.LocalPipeFlowHeatTransfer (
          alpha0=2000),
     Twall_start=300,
     dT=10,
@@ -90,8 +90,7 @@ equation
 <p><img src=\"modelica://Modelica/Resources/Images/Fluid/Examples/HeatExchanger/HeatExchanger.png\" alt=\"HeatExchanger.png\"/></p>
 </html>"),
     experiment(
-      StopTime=100,
-      Tolerance=1e-05,
+      StopTime=10,
       __Dymola_fixedstepsize=0.02,
       __Dymola_Algorithm="Euler"),
     __Dymola_experimentFlags(Advanced(
